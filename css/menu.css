@@ -1,0 +1,16 @@
+body {
+  font-family: : Arial, Helvetica, sans-serif;
+}
+
+.category {
+  margin-bottom: 20px
+}
+
+.category-title {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.group {
+  margin-left: 20px;
+}

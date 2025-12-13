@@ -1,0 +1,6 @@
+[
+  { "file": "pays_europe.json", "label": "Pays Europe" }
+  // { "file": "fruits.json", "label": "Fruits" },
+  // { "file": "vegetables.json", "label": "Vegetables" },
+  // { "file": "capitals.json", "label": "World Capitals" }
+]
