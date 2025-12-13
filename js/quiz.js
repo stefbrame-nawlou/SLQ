@@ -43,7 +43,41 @@ async function loadQuiz() {
     wordContainer.textContent = item.word;
     wordContainer.style.display = wordToSign ? "block" : "none";
 
-    videoContainer.innerHTML = item.videos
+    videoContainer.innerHTML = "";
+    
+    item.videos.forEach((v, idx) => {
+      const videoWrapper = document.createElement("div");
+      videoWrapper.className = "video-wrapper";
+
+      const videoEl = document.createElement("video");
+      videoEl.src = `videos/${v}`;
+      videoEl.autoplay = true;
+      videoEl.muted = true;
+      videoEl.style.width = "200px";
+      videoEl.style.marginRight = "10px";
+      videoWrapper.appendChild(videoEl);
+
+      const speedInput = document.createElement("input");
+      speedInput.type = "range";
+      speedInput.min = "25";
+      speedInput.max = "300";
+      speedInput.step = "20";
+      speedInput.value = "100";
+
+      const speedLabel = document.createElement("span");
+      speedLabel.textContent =  `${speedInput.value}%`;
+
+      speedInput.addEventListener("input", () => {
+        const percent = parseInt(speedInput.value);
+        speedLabel.textContent = `${percent}%`;
+        videoEl.playbackRate = percent / 100; // convert to decimal
+      });
+      
+      videoWrapper.appendChild(speedInput);
+      videoWrapper.appendChild(speedLabel);
+      
+    });
+    item.videos
       .map(v => `<video src="videos/${v}" controls></video>`)
       .join("");
     videoContainer.style.display = wordToSign ? "none": "block";
@@ -62,20 +96,17 @@ async function loadQuiz() {
   });
   
   correctBtn.addEventListener("click", () => {
-    state.score = state.score || {correct: 0, wrong: 0};
-    state.score.correct++;
-    localStorage.setItem("slq_state", JSON.stringify(state));
-    showNext();
+    nextQuestion(true);
   });
   
   wrongBtn.addEventListener("click", () => {
-    state.score = state.score || {correct: 0, wrong: 0};
-    state.score.wrong++;
-    localStorage.setItem("slq_state", JSON.stringify(state));
-    showNext();
+    nextQuestion(false);
   });
   
-  function nextQuestion() {
+  function nextQuestion(isCorrect) {
+    state.score = state.score || {correct: 0, wrong: 0};
+    isCorrect ? state.score.correct++ : state.score.wrong++;
+    localStorage.setItem("slq_state", JSON.stringify(state));
     currentIndex++;
     showNext();
   }
