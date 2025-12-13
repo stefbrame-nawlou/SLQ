@@ -22,7 +22,10 @@ async function loadMenu() {
     catDiv.appendChild(title);
     
     for (let i = 0; i < totalGroups; i++){
-      const groupDiv = document.createElement("ipnut");
+      const groupDiv = document.createElement("div");
+      groupDiv.className = "group";
+
+      const checkbox = document.createElement("input");
       checkbox.type = "checkbox"
       checkbox.className = "group-checkbox";
       checkbox.id = `${cat.file}-group-${i}`;
@@ -32,12 +35,12 @@ async function loadMenu() {
       const start = i*10 +1;
       const end = Math.min((i + 1)*10, totalWords);
 
-      const lbl = document.createElement("label");
-      lbl.setAttribute("for", checkbox.id);
-      lbl.textContent = `Words ${start}-${end}`;
+      const label = document.createElement("label");
+      label.setAttribute("for", checkbox.id);
+      label.textContent = `Words ${start}-${end}`;
 
       // Optional tooltip (hover to see words)
-      lbl.title = catData.words.slice(i*10, (i+1)*10).map(w => w.word).join(", ");
+      label.title = catData.words.slice(i*10, (i+1)*10).map(w => w.word).join(", ");
 
       groupDiv.appendChild(checkbox);
       groupDiv.appendChild(label);
