@@ -1,13 +1,15 @@
 const menuEl = document.getElementById("menu");
 const startBtn = document.getElementById("startBtn");
-let titleEl = document.getElementById("pageTitle");
-
-const now = new Date();
-titleEl.textContent += ` — ${now.toLocaleString()}`;
 
 alert(now);
 
 async function loadMenu() {
+  const titleEl = document.getElementById("pageTitle");
+
+  const now = new Date();
+  titleEl.textContent += ` — ${now.toLocaleString()}`;
+
+
   let categories;
   try {
     const categoriesRes = await fetch("data/categories.json");
