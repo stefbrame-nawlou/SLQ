@@ -5,6 +5,8 @@ const titleEL = document.getElementById("pageTitle");
 const now = new Date();
 titleEl.textContent += ` — ${now.toLocaleString()}`;
 
+alert(now);
+
 async function loadMenu() {
   let categories;
   try {
