@@ -7,6 +7,7 @@ const videoContainer = document.getElementById("videoContainer");
 const checkBtn = document.getElementById("checkBtn");
 const correctBtn = document.getElementById("correctBtn");
 const wrongBtn = document.getElementById("wrongBtn");
+const progress = document.getElementById("progress");
 
 // Load from previous page
 const state = JSON.parse(localStorage.getItem("slq_state")) || {};
@@ -37,7 +38,8 @@ async function loadQuiz() {
       showResults();
       return;
     }
-
+    progress.textContent = `"${currentIndex+1}/${quizItems.length}`;
+    
     const item = quizItems[currentIndex];
 
     wordContainer.textContent = item.word;
@@ -75,7 +77,7 @@ async function loadQuiz() {
       
       videoWrapper.appendChild(speedInput);
       videoWrapper.appendChild(speedLabel);
-      
+
     });
     item.videos
       .map(v => `<video src="videos/${v}" controls></video>`)
