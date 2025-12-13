@@ -1,6 +1,6 @@
 [
-  { "file": "pays_europe.json", "label": "Pays Europe" }
-  // { "file": "fruits.json", "label": "Fruits" },
-  // { "file": "vegetables.json", "label": "Vegetables" },
-  // { "file": "capitals.json", "label": "World Capitals" }
+  {"file": "pays_europe.json", "label": "Pays Europe", "enabled": true},
+  {"file": "fruits.json", "label": "Fruits", "enabled": false},
+  {"file": "vegetables.json", "label": "Vegetables", "enabled": false},
+  {"file": "capitals.json", "label": "World Capitals", "enabled": false}
 ]

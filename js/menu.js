@@ -2,8 +2,9 @@ const menuEl = document.getElementById("menu");
 const startBtn = document.getElementById("startBtn");
 
 async function loadMenu() {
-  const categoriesRes = await fetch("data/categories.json");
-  const categories = await categoriesRes.json();
+  const allCategoriesRes = await fetch("data/categories.json");
+  const allCategories = await allCategoriesRes.json();
+  const categories = allCategories.filter(cat => cat.enabled);
 
   // use for...of instead of forEach(async)
   for (const cat of categories) {
