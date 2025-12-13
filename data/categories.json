@@ -1,6 +1,5 @@
 [
   {"file": "pays_europe.json", "label": "Pays Europe", "enabled": true},
   {"file": "fruits.json", "label": "Fruits", "enabled": false},
-  {"file": "vegetables.json", "label": "Vegetables", "enabled": false},
-  {"file": "capitals.json", "label": "World Capitals", "enabled": false}
+  {"file": "légumes.json", "label": "Légumes", "enabled": false}
 ]
