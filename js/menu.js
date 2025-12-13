@@ -8,7 +8,7 @@ async function loadMenu() {
 
   // titleEl.textContent += ` — ${COMMIT_TIMESTAMP}`;
 
-  alert(now);
+  // alert(now);
 
   let categories;
   try {
