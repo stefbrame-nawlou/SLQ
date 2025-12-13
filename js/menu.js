@@ -1,6 +1,6 @@
 const menuEl = document.getElementById("menu");
 const startBtn = document.getElementById("startBtn");
-let titleEL = document.getElementById("pageTitle");
+let titleEl = document.getElementById("pageTitle");
 
 const now = new Date();
 titleEl.textContent += ` — ${now.toLocaleString()}`;
