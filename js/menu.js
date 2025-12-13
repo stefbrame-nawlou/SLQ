@@ -71,6 +71,16 @@ startBtn.addEventListener("click", () => {
     groupIndex: Number(cb.dataset.groupIndex)
   }));
 
+  // show alert of selected groups
+  if (selectedGroups.length === 0) {
+    alert("No groups selected!");
+  } else {
+    const message = selectedGroups
+      .map(s => `${s.categoryFile} group ${s.groupIndex + 1}`)
+      .join("\n");
+    alert(`Selected groups:\n${message}`);
+  }
+
   localStorage.setItem("slq_state", JSON.stringify({ selections: selectedGroups }));
   window.location.href = "quiz.html";
 });
