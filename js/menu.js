@@ -10,7 +10,7 @@ async function loadMenu() {
     console.error("Error parsing categories.json:", err);
   }
 
-  categories.filter(cat => cat.enabled);
+  categories = categories.filter(cat => cat.enabled);
 
   // use for...of instead of forEach(async)
   for (const cat of categories) {
