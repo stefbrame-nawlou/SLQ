@@ -21,7 +21,7 @@ async function loadMenu() {
     title.textContent = cat.label
     catDiv.appendChild(title);
     
-    for let(i = 0; i < totalGroups; i++){
+    for (let i = 0; i < totalGroups; i++){
       const groupDiv = document.createElement("ipnut");
       checkbox.type = "checkbox"
       checkbox.className = "group-checkbox";
