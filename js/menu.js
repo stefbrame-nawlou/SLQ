@@ -10,16 +10,18 @@ async function loadMenu() {
     console.error("Error parsing categories.json:", err);
   }
 
+  categories.filter(cat => cat.enabled);
+
   // use for...of instead of forEach(async)
   for (const cat of categories) {
     let catData;
     try {
-      const catRes = await fetch(`data/pays_europe.json`);
+      const catRes = await fetch(`data/${cat.file}`);
       catData = await catRes.json();
     } catch (err) {
-      console.error("Error parsing pays_europe.json:", err);
+      console.error(`Error parsing ${cat.file}:  ${err}`);
     }
-    
+
     const totalWords = catData.words.length;
     const totalGroups = Math.ceil(totalWords / 10);
 
@@ -49,7 +51,7 @@ async function loadMenu() {
 
       const label = document.createElement("label");
       label.setAttribute("for", checkbox.id);
-      label.textContent = `Words ${start}-${end}`;
+      label.textContent = `${} ${start}-${end}`;
       label.title = catData.words.slice(i * 10, (i + 1) * 10).map(w => w.word).join(", ");
 
       groupDiv.appendChild(checkbox);
