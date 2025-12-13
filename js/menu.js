@@ -51,7 +51,7 @@ async function loadMenu() {
 
       const label = document.createElement("label");
       label.setAttribute("for", checkbox.id);
-      label.textContent = `${} ${start}-${end}`;
+      label.textContent = `${cat.label} ${start}-${end}`;
       label.title = catData.words.slice(i * 10, (i + 1) * 10).map(w => w.word).join(", ");
 
       groupDiv.appendChild(checkbox);
