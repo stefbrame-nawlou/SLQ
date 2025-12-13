@@ -1,14 +1,13 @@
 const menuEl = document.getElementById("menu");
 const startBtn = document.getElementById("startBtn");
 
-alert(now);
-
 async function loadMenu() {
   const titleEl = document.getElementById("pageTitle");
 
   const now = new Date();
   titleEl.textContent += ` — ${now.toLocaleString()}`;
 
+  alert(now);
 
   let categories;
   try {
