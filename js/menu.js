@@ -2,10 +2,11 @@ const menuEl = document.getElementById("menu");
 const startBtn = document.getElementById("startBtn");
 
 async function loadMenu() {
-  const titleEl = document.getElementById("pageTitle");
+  // const titleEl = document.getElementById("pageTitle");
+  // // COMMIT_TIMESTAMP will be replaced by script
+  // //const COMMIT_TIMESTAMP = "__COMMIT_TIMESTAMP__";
 
-  const now = new Date();
-  titleEl.textContent += ` — ${now.toLocaleString()}`;
+  // titleEl.textContent += ` — ${COMMIT_TIMESTAMP}`;
 
   alert(now);
 
