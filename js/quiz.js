@@ -39,7 +39,7 @@ async function loadQuiz() {
       return;
     }
     progress.textContent = `"${currentIndex+1}/${quizItems.length}`;
-    
+
     const item = quizItems[currentIndex];
 
     wordContainer.textContent = item.word;
@@ -113,10 +113,47 @@ async function loadQuiz() {
     showNext();
   }
 
+  document.addEventListener("keydown", (event) => {
+    // event.key is case-sensitive, "C" for uppercase C, "c" for lowercase
+    if (event.key.toUpperCase() === "V") {
+      if (checkBtn) checkBtn.click();
+    }
+
+    if (event.key.toUpperCase() === "C") {
+      if (correctBtn) correctBtn.click();
+    }
+    
+    if (event.key.toUpperCase() === "F") {
+      if (wrongBtn) wrongBtn.click();
+    }
+
+    if (event.key === "ArrowUp") adjustVideoSpeed(20);
+    if (event.key === "ArrowDown") adjustVideoSpeed(-20);
+    
+  });
+
+  function adjustVideoSpeed(delta) {
+    const videoWrappers = document.querySelectorAll(".video-wrapper");
+    videoWrappers.forEach(wrapper => {
+      const videoEl = wrapper.querySelector("video");
+      const speedInput = wrapper.querySelector('ipnut[type="range"]');
+      const speedLabel = wrapper.querySelector("span");
+
+      let currentSpeed = parseInt(speedInput.value);
+      currentSpeed += delta;
+
+      currentSpeed = Math.max(parseInt(speedInput.min), Math.min(parseInt(speedInput.max), currentSpeed));
+      speedInput.value = currentSpeed;
+      speedLabel.textContent = `${currentSpeed}%`;
+      videoEl.playbackRate = currentSpeed / 100;
+    });
+  }
+  
   function showResults() {
     const score = state.score || { correct: 0, wrong: 0 };
     alert(`Quiz finished!\nCorrect: ${score.correct}\nWrong: ${score.wrong}`);
   }
+
 }
 
 loadQuiz();
