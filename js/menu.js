@@ -2,15 +2,24 @@ const menuEl = document.getElementById("menu");
 const startBtn = document.getElementById("startBtn");
 
 async function loadMenu() {
-  const allCategoriesRes = await fetch("data/categories.json");
-  const allCategories = await allCategoriesRes.json();
-  const categories = allCategories.filter(cat => cat.enabled);
+  let categories;
+  try {
+    const categoriesRes = await fetch("data/categories.json");
+    categories = await categoriesRes.json();
+  } catch (err) {
+    console.error("Error parsing categories.json:", err);
+  }
 
   // use for...of instead of forEach(async)
   for (const cat of categories) {
-    const catRes = await fetch(`data/${cat.file}`);
-    const catData = await catRes.json();
-
+    let catData;
+    try {
+      const catRes = await fetch(`data/pays_europe.json`);
+      catData = await catRes.json();
+    } catch (err) {
+      console.error("Error parsing pays_europe.json:", err);
+    }
+    
     const totalWords = catData.words.length;
     const totalGroups = Math.ceil(totalWords / 10);
 
