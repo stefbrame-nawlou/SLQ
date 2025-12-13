@@ -8,11 +8,12 @@ async function loadMenu() {
     categories = await categoriesRes.json();
   } catch (err) {
     console.error("Error parsing categories.json:", err);
+    return; // stop if categories fail
   }
 
+  // Only enabled categories
   categories = categories.filter(cat => cat.enabled);
 
-  // use for...of instead of forEach(async)
   for (const cat of categories) {
     let catData;
     try {
@@ -20,6 +21,7 @@ async function loadMenu() {
       catData = await catRes.json();
     } catch (err) {
       console.error(`Error parsing ${cat.file}:  ${err}`);
+      continue; // skip this category if fetch fails
     }
 
     const totalWords = catData.words.length;
@@ -64,13 +66,10 @@ async function loadMenu() {
 }
 
 startBtn.addEventListener("click", () => {
-  const selectedGroups = [];
-  document.querySelectorAll("input.group-checkbox:checked").forEach(cb => {
-    selectedGroups.push({
-      categoryFile: cb.dataset.categoryFile,
-      groupIndex: Number(cb.dataset.groupIndex)
-    });
-  });
+  const selectedGroups = Array.from(document.querySelectorAll("input.group-checkbox:checked")).map(cb => ({
+    categoryFile: cb.dataset.categoryFile,
+    groupIndex: Number(cb.dataset.groupIndex)
+  }));
 
   localStorage.setItem("slq_state", JSON.stringify({ selections: selectedGroups }));
   window.location.href = "quiz.html";
