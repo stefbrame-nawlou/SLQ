@@ -27,11 +27,9 @@ async function loadQuiz() {
     const groupWords = data.words.slice(start, end);
 
     quizItems.push(...groupWords);
-
-    quizItems = quizItems.sort(() => Math.random()-0.5);
-
-    showNext();
   }
+  quizItems = quizItems.sort(() => Math.random()-0.5);
+  showNext();
 
   function showNext() {
     if (currentIndex >= quizItems.length) {
@@ -77,13 +75,10 @@ async function loadQuiz() {
       
       videoWrapper.appendChild(speedInput);
       videoWrapper.appendChild(speedLabel);
-
+      
+      videoContainer.appendChild(videoWrapper);
     });
-    item.videos
-      .map(v => `<video src="videos/${v}" controls></video>`)
-      .join("");
-    videoContainer.style.display = wordToSign ? "none": "block";
-
+    
     checkBtn.style.display = "inline-block";
     correctBtn.style.display = "none";
     wrongBtn.style.display = "none";
@@ -136,7 +131,7 @@ async function loadQuiz() {
     const videoWrappers = document.querySelectorAll(".video-wrapper");
     videoWrappers.forEach(wrapper => {
       const videoEl = wrapper.querySelector("video");
-      const speedInput = wrapper.querySelector('ipnut[type="range"]');
+      const speedInput = wrapper.querySelector('input[type="range"]');
       const speedLabel = wrapper.querySelector("span");
 
       let currentSpeed = parseInt(speedInput.value);
