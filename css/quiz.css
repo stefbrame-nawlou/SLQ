@@ -1,0 +1,26 @@
+/* Container for all videos */
+#videoContainer {
+  display: flex;       /* horizontal layout on PCs */
+  flex-wrap: wrap;     /* wrap to next line if not enough space */
+  gap: 10px;           /* space between videos */
+  justify-content: start;
+  margin-top: 10px;
+}
+
+/* Video wrapper */
+.video-wrapper video {
+  width: 300px;        /* default PC size */
+  max-width: 100%;     /* prevent overflow on smaller screens */
+}
+
+/* Mobile layout */
+@media screen and (max-width: 768px) {
+  #videoContainer {
+    flex-direction: column; /* stack videos vertically */
+    align-items: center;
+  }
+  .video-wrapper video {
+    width: 90%;             /* almost full width of screen */
+    margin-bottom: 10px;
+  }
+}
