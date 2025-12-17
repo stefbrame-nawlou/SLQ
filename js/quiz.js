@@ -42,28 +42,38 @@ function showNext() {
   const item = quizItems[currentIndex];
   progress.textContent = `${currentIndex + 1}/${quizItems.length}`;
 
-  // Show word only if wordToSign or if revealed
-  wordContainer.textContent = item.word;
+  // Display word + video count if more than 1
+  let displayTxt = item.word;
+  if (item.videos.length > 1) displayTxt += ` (${item.videos.length} signes)`;
+  wordContainer.textContent = displayTxt;
   wordContainer.style.display = wordToSign ? "block" : "none";
 
   // Clear previous videos
   videoContainer.innerHTML = "";
-  videoContainer.style.display = wordToSign ? "none" : "block"; // initially hidden for wordToSign
+  videoContainer.style.display = wordToSign ? "none" : "flex";
 
-  // Create video elements but hide initially if wordToSign
   item.videos.forEach((v) => {
     const videoWrapper = document.createElement("div");
     videoWrapper.className = "video-wrapper";
 
+    // Container for video + slider
+    const videoWithControls = document.createElement("div");
+    videoWithControls.style.display = "flex";
+    videoWithControls.style.flexDirection = "column";
+    videoWithControls.style.alignItems = "center";
+
+    // Video element
     const videoEl = document.createElement("video");
     videoEl.src = `videos/${v}`;
-    videoEl.controls = true;
-    videoEl.autoplay = false;
+    videoEl.controls = false;
+    videoEl.autoplay = false; // autoplay only after Vérifier
     videoEl.muted = true; 
     videoEl.style.width = "300px";
-    videoEl.style.marginRight = "10px";
+    videoEl.addEventListener("loadedmetadata", () => {
+      videoEl.playbackRate = 1; // exact 100% speed
+    });
 
-    // Speed control
+    // Speed slider + label
     const speedInput = document.createElement("input");
     speedInput.type = "range";
     speedInput.min = "25";
@@ -80,10 +90,13 @@ function showNext() {
       videoEl.playbackRate = percent / 100;
     });
 
-    videoWrapper.appendChild(videoEl);
-    videoWrapper.appendChild(speedInput);
-    videoWrapper.appendChild(speedLabel);
+    // Append video + slider inside container
+    videoWithControls.appendChild(videoEl);
+    videoWithControls.appendChild(speedInput);
+    videoWithControls.appendChild(speedLabel);
 
+    // Append container to wrapper, wrapper to main videoContainer
+    videoWrapper.appendChild(videoWithControls);
     videoContainer.appendChild(videoWrapper);
   });
 
@@ -92,6 +105,7 @@ function showNext() {
   correctBtn.style.display = "none";
   wrongBtn.style.display = "none";
 }
+
 
 // Check button logic
 checkBtn.addEventListener("click", () => {
