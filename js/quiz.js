@@ -38,7 +38,7 @@ async function loadQuiz() {
       showResults();
       return;
     }
-    progress.textContent = `"${currentIndex+1}/${quizItems.length}`;
+    progress.textContent = `${currentIndex+1}/${quizItems.length}`;
 
     const item = quizItems[currentIndex];
 
