@@ -43,7 +43,7 @@ async function loadMenu() {
     title.className = "category-title";
     title.textContent = cat.label;
     catDiv.appendChild(title);
-
+    
     // groups
     for (let i = 0; i < totalGroups; i++) {
       const groupDiv = document.createElement("div");
@@ -57,7 +57,7 @@ async function loadMenu() {
       checkbox.dataset.groupIndex = i;
 
       const start = i * 10 + 1;
-      const end = Math.min((i + 1) * 10, totalWords);
+      const end = Math.min((i + 1) * 10, totalWords); 
 
       const label = document.createElement("label");
       label.setAttribute("for", checkbox.id);
@@ -68,6 +68,14 @@ async function loadMenu() {
       groupDiv.appendChild(label);
       catDiv.appendChild(groupDiv);
     }
+
+    title.addEventListener("click", () {
+      const checkboxes = catDiv.querySelectorAll("input.group-checkbox");
+      const allChecked = Array.from(checkboxes).every(cb => cb.checked);
+      checkboxes.forEach(cb => {
+        cb.checked = !allChecked;
+      });
+    });
 
     menuEl.appendChild(catDiv);
   }
