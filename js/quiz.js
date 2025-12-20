@@ -70,10 +70,12 @@ function showNext() {
     // Video element
     const videoEl = document.createElement("video");
     videoEl.src = `videos/${v}`;
+    videoEl.preload = "auto";
     videoEl.controls = false;
     videoEl.autoplay = false; // autoplay only after Vérifier
     videoEl.muted = true; 
     videoEl.loop = true
+    videoEl.playsInline = true; // mobile friendl
     videoEl.style.width = "500px";
     videoEl.addEventListener("loadedmetadata", () => {
       videoEl.playbackRate = 1; // exact 100% speed
