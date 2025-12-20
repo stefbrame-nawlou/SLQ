@@ -8,6 +8,7 @@ const checkBtn = document.getElementById("checkBtn");
 const correctBtn = document.getElementById("correctBtn");
 const wrongBtn = document.getElementById("wrongBtn");
 const progress = document.getElementById("progress");
+const pageTitle = document.getElementById("pageTitle");
 
 // Load from previous page
 const state = JSON.parse(localStorage.getItem("slq_state")) || {};
@@ -15,8 +16,11 @@ const selections = state.selections || [];
 
 let quizItems = [];
 let currentIndex = 0;
+let refTitle = "";
 
 async function loadQuiz() {
+  refTitle = pageTitle.textContent;
+
   for (const sel of selections) {
     const dataRes = await fetch(`data/${sel.categoryFile}`);
     const data = await dataRes.json();
@@ -40,7 +44,8 @@ function showNext() {
   }
 
   const item = quizItems[currentIndex];
-  progress.textContent = `${currentIndex + 1}/${quizItems.length}`;
+  pageTitle.textContent = `${refTitle} ${currentIndex + 1}/${quizItems.length}`;
+  // progress.textContent = `${refTitle} ${currentIndex + 1}/${quizItems.length}`;
 
   // Display word + video count if more than 1
   let displayTxt = item.word;
@@ -68,7 +73,8 @@ function showNext() {
     videoEl.controls = false;
     videoEl.autoplay = false; // autoplay only after Vérifier
     videoEl.muted = true; 
-    videoEl.style.width = "300px";
+    videoEl.loop = true
+    videoEl.style.width = "500px";
     videoEl.addEventListener("loadedmetadata", () => {
       videoEl.playbackRate = 1; // exact 100% speed
     });
