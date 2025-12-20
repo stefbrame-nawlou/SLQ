@@ -69,7 +69,7 @@ async function loadMenu() {
       catDiv.appendChild(groupDiv);
     }
 
-    title.addEventListener("click", () {
+    title.addEventListener("click", () => {
       const checkboxes = catDiv.querySelectorAll("input.group-checkbox");
       const allChecked = Array.from(checkboxes).every(cb => cb.checked);
       checkboxes.forEach(cb => {
