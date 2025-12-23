@@ -135,8 +135,17 @@ correctBtn.addEventListener("click", () => nextQuestion(true));
 wrongBtn.addEventListener("click", () => nextQuestion(false));
 
 function nextQuestion(isCorrect) {
-  state.score = state.score || { correct: 0, wrong: 0 };
-  isCorrect ? state.score.correct++ : state.score.wrong++;
+  state.score = state.score || {correct: 0, wrong: 0};
+  state.results = state.results || {correct: [], wrong: []};
+  
+  if (isCorrect) {
+    state.score.correct++;
+    state.results.correct.push(item);
+  } else {
+    state.score.wrong++;
+    state.results.wrong.push(item);
+  }
+
   localStorage.setItem("slq_state", JSON.stringify(state));
   currentIndex++;
   showNext();
@@ -172,8 +181,7 @@ function adjustVideoSpeed(delta) {
 
 // Show final results
 function showResults() {
-  const score = state.score || { correct: 0, wrong: 0 };
-  alert(`Quiz finished!\nCorrect: ${score.correct}\nWrong: ${score.wrong}`);
+  window.location.href = "results.html"
 }
 
 loadQuiz();

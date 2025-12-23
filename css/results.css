@@ -1,0 +1,26 @@
+.results-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.column-results {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.column-results.wrong {
+  background-color: #fff4f4;
+}
+
+.column-results.correct {
+  background-color: #f4fff6;
+}
+
+@media(max-width: 786px) {
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+}
