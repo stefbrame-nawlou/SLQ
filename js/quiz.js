@@ -138,6 +138,8 @@ function nextQuestion(isCorrect) {
   state.score = state.score || {correct: 0, wrong: 0};
   state.results = state.results || {correct: [], wrong: []};
   
+  const item = quizItems[currentIndex];
+  
   if (isCorrect) {
     state.score.correct++;
     state.results.correct.push(item);
