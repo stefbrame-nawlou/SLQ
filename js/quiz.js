@@ -87,11 +87,12 @@ function showNext() {
     speedInput.min = "25";
     speedInput.max = "300";
     speedInput.step = "20";
-    speedInput.value = "100";
+    speedInput.value = 100;
 
     const speedLabel = document.createElement("span");
     speedLabel.textContent = `${speedInput.value}%`;
-
+    videoEl.playbackRate = speedInput.value / 100;
+    
     speedInput.addEventListener("input", () => {
       const percent = parseInt(speedInput.value);
       speedLabel.textContent = `${percent}%`;
