@@ -14,3 +14,7 @@ body {
 .group {
   margin-left: 20px;
 }
+
+#startBtn {
+  padding: 5px;
+}
