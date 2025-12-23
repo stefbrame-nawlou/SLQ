@@ -3,4 +3,5 @@
   {"file": "fruits.json", "label": "Fruits", "enabled": false},
   {"file": "légumes.json", "label": "Légumes", "enabled": false},
   {"file": "mois_annee.json", "label": "Mois de l'année", "enabled": true}
+  {"file": "santé.json", "label": "Santé", "enabled": true}
 ]
