@@ -110,8 +110,11 @@ function showNext() {
 
   // Buttons visibility
   checkBtn.style.display = "inline-block";
+  checkBtn.disabled = false;
   correctBtn.style.display = "none";
+  correctBtn.disabled = true;
   wrongBtn.style.display = "none";
+  wrongBtn.disabled = true;
 }
 
 
@@ -125,9 +128,12 @@ checkBtn.addEventListener("click", () => {
     // Reveal word for videoToWord mode
     wordContainer.style.display = "block";
   }
-
   correctBtn.style.display = "block";
+  correctBtn.disabled = false;
   wrongBtn.style.display = "block";
+  wrongBtn.disabled = false;
+  checkBtn.style.display = "none";
+  checkBtn.disabled = true;
 });
 
 // Correct / Wrong buttons
@@ -139,7 +145,7 @@ function nextQuestion(isCorrect) {
   state.results = state.results || {correct: [], wrong: []};
   
   const item = quizItems[currentIndex];
-  
+
   if (isCorrect) {
     state.score.correct++;
     state.results.correct.push(item);

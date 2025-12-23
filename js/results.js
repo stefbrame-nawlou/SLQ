@@ -13,7 +13,7 @@ const pctCorrect = total ? Math.round((score.correct/total)*100) : 0;
 const pctWrong = total ? Math.round((score.wrong/total)*100) : 0;
 
 function createInnerHTML(score, lbl, perc) {
-  m = `<p><strong>${score} ${lbl} (${perc}%)</strong></p>`
+  return `<p><strong>${score} ${lbl} (${perc}%)</strong></p>`
 }
 
 wrongStatsEl.innerHTML = createInnerHTML(score.wrong, "erreurs", pctWrong);
