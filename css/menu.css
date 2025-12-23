@@ -16,5 +16,5 @@ body {
 }
 
 #startBtn {
-  padding: 5px;
+  margin-block-end: 10px;
 }
