@@ -1,0 +1,21 @@
+{
+  "words": [
+    {"word": "Janvier", "videos": ["Janvier_brs_20251223.mp4"]},
+    {"word": "Février", "videos": ["Février_brs_20251223.mp4"]},
+    {"word": "Mars", "videos": ["Mars_brs_20251223.mp4"]},
+    {"word": "Avril", "videos": ["Avril_brs_20251223.mp4"]},
+    {"word": "Mai", "videos": ["Mai_brs_20251223.mp4"]},
+    {"word": "Juin", "videos": ["Juin_brs_20251223.mp4"]},
+    {"word": "Juillet", "videos": ["Juillet_brs_20251223.mp4"]},
+    {"word": "Août", "videos": ["Août_brs_20251223.mp4"]},
+    {"word": "Septembre", "videos": ["Septembre_brs_20251223.mp4"]},
+    {"word": "Octobre", "videos": ["Octobre_brs_20251223.mp4"]},
+    {"word": "Novembre", "videos": ["Novembre_brs_20251223.mp4"]},
+    {"word": "Décembre", "videos": ["Décembre_brs_20251223.mp4"]},
+    {"word": "Saisons", "videos": ["Saisons_brs_20251223.mp4"]},
+    {"word": "Éte", "videos": ["Éte_brs_20251223.mp4"]},
+    {"word": "Printemps", "videos": ["Printemps_brs_20251223.mp4"]},
+    {"word": "Automne", "videos": ["Automne_brs_20251223.mp4"]},
+    {"word": "Hiver", "videos": ["Hiver_brs_20251223.mp4"]}
+  ]
+}
