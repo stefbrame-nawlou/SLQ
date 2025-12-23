@@ -22,16 +22,16 @@ correctStatsEl.innerHTML = createInnerHTML(score.correct, "correct", pctCorrect)
 function renderList(container, items) {
   if (!items.length) {
     const li = document.createElement("li");
-    li.textContent = "-";
+    li.textContent = "";
     container.appendChild(li);
     return;
   }
 
   items.forEach(item => {
     const li = document.createElement("li");
-    const wordSpan = document.createElement("strong");
-    wordSpan.textContent = item.word + ": ";
-    li.appendChild(wordSpan);
+    // const wordSpan = document.createElement("strong");
+    // wordSpan.textContent = item.word + ": ";
+    // li.appendChild(wordSpan);
 
     item.videos.forEach((video, idx) => {
       const link = document.createElement("a");
@@ -52,5 +52,5 @@ function renderList(container, items) {
   });
 }
 
-renderList(wrongListEl, results.wront || []);
+renderList(wrongListEl, results.wrong || []);
 renderList(correctListEl, results.correct || []);
