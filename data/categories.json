@@ -5,5 +5,6 @@
   {"file": "mois_annee.json", "label": "Mois de l'année", "enabled": true},
   {"file": "santé.json", "label": "Santé", "enabled": true},
   {"file": "pays monde.json", "label": "Pays du monde", "enabled": true},
-  {"file": "actualité.json", "label": "Actualité", "enabled": true}
+  {"file": "actualité.json", "label": "Actualité", "enabled": true},
+  {"file": "villes.json", "label": "Villes", "enabled": true}
 ]
