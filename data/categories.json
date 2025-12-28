@@ -2,7 +2,7 @@
   {"file": "pays_europe.json", "label": "Pays Europe", "enabled": true},
   {"file": "pays_monde.json", "label": "Pays du monde", "enabled": true},
   {"file": "villes.json", "label": "Villes Belgique", "enabled": true},
-  {"file": "villes monde.json", "label": "Capitales, villes du monde", "enabled": true},
+  {"file": "villes_monde.json", "label": "Capitales, villes du monde", "enabled": true},
   {"file": "fruits.json", "label": "Fruits", "enabled": false},
   {"file": "légumes.json", "label": "Légumes", "enabled": false},
   {"file": "mois_annee.json", "label": "Mois de l'année", "enabled": true},
