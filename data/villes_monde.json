@@ -1,0 +1,24 @@
+{
+  "words": [
+    {"word": "Amsterdam", "videos": ["Amsterdam_brs_20251227.mp4"]},
+    {"word": "Athènes", "videos": ["Athènes_brs_20251227.mp4"]},
+    {"word": "Berlin", "videos": ["Berlin_brs_20251227.mp4"]},
+    {"word": "Berne", "videos": ["Berne_brs_20251227.mp4"]},
+    {"word": "Bruxelles", "videos": ["Bruxelles_brs_20251227.mp4", "Bruxelles (2)_brs_20251227.mp4"]},
+    {"word": "Copenhague", "videos": ["Copenhague_brs_20251227.mp4"]},
+    {"word": "Dublin", "videos": ["Dublin_brs_20251227.mp4"]},
+    {"word": "Kiev", "videos": ["Kiev_brs_20251227.mp4"]},
+    {"word": "Lisbonne", "videos": ["Lisbonne_brs_20251227.mp4"]},
+    {"word": "Londres", "videos": ["Londres_brs_20251227.mp4", "Londres (2)_brs_20251227.mp4"]},
+    {"word": "Madrid", "videos": ["Madrid_brs_20251227.mp4"]},
+    {"word": "Milan", "videos": ["Milan_brs_20251227.mp4"]},
+    {"word": "Mouscou", "videos": ["Mouscou_brs_20251227.mp4", "Mouscou (2)_brs_20251227.mp4"]},
+    {"word": "Paris", "videos": ["Paris_brs_20251227.mp4", "Paris (2)_brs_20251227.mp4"]},
+    {"word": "Pékin", "videos": ["Pékin_brs_20251227.mp4"]},
+    {"word": "Prague", "videos": ["Prague_brs_20251227.mp4"]},
+    {"word": "Rome", "videos": ["Rome_brs_20251227.mp4"]},
+    {"word": "Sicile", "videos": ["Sicile_brs_20251227.mp4"]},
+    {"word": "Tokyo", "videos": ["Tokyo_brs_20251227.mp4"]},
+    {"word": "Washington DC", "videos": ["Washington DC_brs_20251227.mp4"]}
+  ]
+}

@@ -1,10 +1,16 @@
 [
   {"file": "pays_europe.json", "label": "Pays Europe", "enabled": true},
+  {"file": "pays_monde.json", "label": "Pays du monde", "enabled": true},
+  {"file": "villes.json", "label": "Villes", "enabled": true},
   {"file": "fruits.json", "label": "Fruits", "enabled": false},
   {"file": "légumes.json", "label": "Légumes", "enabled": false},
   {"file": "mois_annee.json", "label": "Mois de l'année", "enabled": true},
   {"file": "santé.json", "label": "Santé", "enabled": true},
-  {"file": "pays monde.json", "label": "Pays du monde", "enabled": true},
   {"file": "actualité.json", "label": "Actualité", "enabled": true},
-  {"file": "villes.json", "label": "Villes", "enabled": true}
+  {"file": "négations.json", "label": "Négations", "enabled": true},
+  {"file": "météo.json", "label": "Météo", "enabled": true},
+  {"file": "émotions.json", "label": "Émotions, sentiments", "enabled": true},
+  {"file": "couleurs.json", "label": "Couleurs", "enabled": true},
+  {"file": "métiers.json", "label": "Métiers", "enabled": true},
+  {"file": "villes monde.json", "label": "Capitales, villes du monde", "enabled": true}
 ]

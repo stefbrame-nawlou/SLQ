@@ -1,0 +1,24 @@
+{
+  "words": [
+    {"word": "Architecte", "videos": ["Architecte_brs_20251227.mp4", "Architecte (2)_brs_20251227.mp4"]},
+    {"word": "Avocat", "videos": ["Avocat_brs_20251227.mp4", "Avocat (2)_brs_20251227.mp4"]},
+    {"word": "Boucher", "videos": ["Boucher_brs_20251227.mp4", "Boucher (2)_brs_20251227.mp4"]},
+    {"word": "Boulanger", "videos": ["Boulanger_brs_20251227.mp4"]},
+    {"word": "Coiffeur", "videos": ["Coiffeur_brs_20251227.mp4", "Coiffeur (2)_brs_20251227.mp4"]},
+    {"word": "Dentiste", "videos": ["Dentiste_brs_20251227.mp4", "Dentiste (2)_brs_20251227.mp4"]},
+    {"word": "Docteur, médecin", "videos": ["Docteur, médecin_brs_20251227.mp4", "Docteur, médecin (2)_brs_20251227.mp4"]},
+    {"word": "Électricien", "videos": ["Électricien_brs_20251227.mp4", "Électricien (2)_brs_20251227.mp4"]},
+    {"word": "Infirmière", "videos": ["Infirmière_brs_20251227.mp4", "Infirmière (2)_brs_20251227.mp4"]},
+    {"word": "Informaticien", "videos": ["Informaticien_brs_20251227.mp4"]},
+    {"word": "Interprète", "videos": ["Interprète_brs_20251227.mp4"]},
+    {"word": "Juge", "videos": ["Juge_brs_20251227.mp4"]},
+    {"word": "Logopède, orthoponiste", "videos": ["Logopède, orthoponiste_brs_20251227.mp4", "Logopède, orthoponiste (2)_brs_20251227.mp4", "Logopède, orthoponiste (3)_brs_20251227.mp4"]},
+    {"word": "Militaire, soldat", "videos": ["Militaire, soldat_brs_20251227.mp4", "Militaire, soldat (2)_brs_20251227.mp4"]},
+    {"word": "Policier", "videos": ["Policier_brs_20251227.mp4", "Policier (2)_brs_20251227.mp4", "Policier (3)_brs_20251227.mp4"]},
+    {"word": "Pompier", "videos": ["Pompier_brs_20251227.mp4"]},
+    {"word": "Professeur", "videos": ["Professeur_brs_20251227.mp4", "Professeur (2)_brs_20251227.mp4"]},
+    {"word": "Psychologue", "videos": ["Psychologue_brs_20251227.mp4"]},
+    {"word": "Secrétaire", "videos": ["Secrétaire_brs_20251227.mp4", "Secrétaire (2)_brs_20251227.mp4"]},
+    {"word": "Serveur (restaurant)", "videos": ["Serveur (restaurant)_brs_20251227.mp4"]}
+  ]
+}

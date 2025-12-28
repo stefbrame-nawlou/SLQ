@@ -1,0 +1,22 @@
+{
+  "words": [
+    {"word": "Arc-en-Ciel", "videos": ["Arc-en-Ciel_brs_20251227.mp4"]},
+    {"word": "Averse, pluie forte", "videos": ["Averse, pluie forte_brs_20251227.mp4"]},
+    {"word": "Brouillard", "videos": ["Brouillard_brs_20251227.mp4"]},
+    {"word": "Cyclone", "videos": ["Cyclone_brs_20251227.mp4"]},
+    {"word": "Foudre, orage", "videos": ["Foudre, orage_brs_20251227.mp4", "Foudre, orage (2)_brs_20251227.mp4"]},
+    {"word": "Froie", "videos": ["Froie_brs_20251227.mp4"]},
+    {"word": "Glace, geler", "videos": ["Glace, geler_brs_20251227.mp4", "Glace, geler (2)_brs_20251227.mp4"]},
+    {"word": "Grêle", "videos": ["Grêle_brs_20251227.mp4", "Grêle (2)_brs_20251227.mp4"]},
+    {"word": "Humide", "videos": ["Humide_brs_20251227.mp4"]},
+    {"word": "Météo, climat", "videos": ["Météo, climat_brs_20251227.mp4", "Météo, climat (2)_brs_20251227.mp4"]},
+    {"word": "Neige", "videos": ["Neige_brs_20251227.mp4", "Neige (2)_brs_20251227.mp4"]},
+    {"word": "Nuage", "videos": ["Nuage_brs_20251227.mp4"]},
+    {"word": "Pluie", "videos": ["Pluie_brs_20251227.mp4", "Pluie (2)_brs_20251227.mp4"]},
+    {"word": "Prévoir", "videos": ["Prévoir_brs_20251227.mp4", "Prévoir (2)_brs_20251227.mp4"]},
+    {"word": "Soliel", "videos": ["Soliel_brs_20251227.mp4"]},
+    {"word": "Température", "videos": ["Température_brs_20251227.mp4"]},
+    {"word": "Vent", "videos": ["Vent_brs_20251227.mp4"]},
+    {"word": "Verglas", "videos": ["Verglas_brs_20251227.mp4"]}
+  ]
+}

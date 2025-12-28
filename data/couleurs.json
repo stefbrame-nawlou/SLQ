@@ -1,0 +1,23 @@
+{
+  "words": [
+    {"word": "Beige", "videos": ["Beige_brs_20251227.mp4"]},
+    {"word": "Blanc", "videos": ["Blanc_brs_20251227.mp4", "Blanc (2)_brs_20251227.mp4"]},
+    {"word": "Bleu", "videos": ["Bleu_brs_20251227.mp4"]},
+    {"word": "Bordeaux", "videos": ["Bordeaux_brs_20251227.mp4"]},
+    {"word": "Clair", "videos": ["Clair_brs_20251227.mp4"]},
+    {"word": "Corail", "videos": ["Corail_brs_20251227.mp4"]},
+    {"word": "Couleur", "videos": ["Couleur_brs_20251227.mp4"]},
+    {"word": "Foncé", "videos": ["Foncé_brs_20251227.mp4"]},
+    {"word": "Gris", "videos": ["Gris_brs_20251227.mp4"]},
+    {"word": "Jaune", "videos": ["Jaune_brs_20251227.mp4", "Jaune (2)_brs_20251227.mp4"]},
+    {"word": "Marron, brun", "videos": ["Marron, brun_brs_20251227.mp4", "Marron, brun (2)_brs_20251227.mp4"]},
+    {"word": "Mauve, violet", "videos": ["Mauve, violet_brs_20251227.mp4", "Mauve, violet (2)_brs_20251227.mp4", "Mauve, violet (3)_brs_20251227.mp4"]},
+    {"word": "Noir", "videos": ["Noir_brs_20251227.mp4"]},
+    {"word": "Or", "videos": ["Or_brs_20251227.mp4", "Or (2)_brs_20251227.mp4"]},
+    {"word": "Orange", "videos": ["Orange_brs_20251227.mp4"]},
+    {"word": "Rose", "videos": ["Rose_brs_20251227.mp4", "Rose (2)_brs_20251227.mp4"]},
+    {"word": "Rouge", "videos": ["Rouge_brs_20251227.mp4"]},
+    {"word": "Turquoise", "videos": ["Turquoise_brs_20251227.mp4"]},
+    {"word": "Vert", "videos": ["Vert_brs_20251227.mp4"]}
+  ]
+}
