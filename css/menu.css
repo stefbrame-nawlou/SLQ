@@ -16,5 +16,10 @@ body {
 }
 
 #startBtn {
-  margin-block-end: 10px;
+  /* margin-block-end: 10px; */
+  font-size: 2em;       /* text size */
+  padding: 20px 40px;   /* inner spacing */
+  margin: 10px;         /* space around buttons */
+  cursor: pointer;      /* makes cursor a pointer */
+  border-radius: 8px;   /* rounded corners */
 }
