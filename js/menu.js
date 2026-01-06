@@ -1,6 +1,13 @@
 const menuEl = document.getElementById("menu");
 const startBtn = document.getElementById("startBtn");
 
+// Increment visit counter
+fetch("https://api.counterapi.dev/v1/stefano-brs-team/slq-counter/up")
+  .then(response => response.json())
+  .then(data => console.log("Counter incremented:", data.count))
+  .catch(err => console.error("Error incrementing counter:", err));
+
+  
 async function loadMenu() {
   // const titleEl = document.getElementById("pageTitle");
   // // COMMIT_TIMESTAMP will be replaced by script
