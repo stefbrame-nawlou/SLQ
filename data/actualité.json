@@ -23,16 +23,17 @@
     {"word": "Météo", "videos": ["Météo_brs_20251224.mp4", "Météo (2)_brs_20251224.mp4"]},
     {"word": "Oroscope", "videos": ["Oroscope_brs_20251224.mp4"]},
     {"word": "Politique", "videos": ["Politique_brs_20251224.mp4"]},
+    {"word": "Président", "videos": ["Président_brs_20260112.mp4"]},
     {"word": "Programme", "videos": ["Programme_brs_20251224.mp4"]},
     {"word": "Publicité", "videos": ["Publicité_brs_20251224.mp4", "Publicité (2)_brs_20251224.mp4"]},
     {"word": "Radio", "videos": ["Radio_brs_20251224.mp4"]},
     {"word": "Record", "videos": ["Record_brs_20251224.mp4"]},
     {"word": "Reportage", "videos": ["Reportage_brs_20251224.mp4", "Reportage (2)_brs_20251224.mp4"]},
     {"word": "Résultat", "videos": ["Résultat_brs_20251224.mp4"]},
-    {"word": "Sport", "videos": ["Sport_brs_20251224.mp4"]},
+    {"word": "Roi", "videos": ["Roi_brs_20260112.mp4"]},
     {"word": "Tremblement", "videos": ["Tremblement_brs_20251224.mp4"]},
     {"word": "Vente", "videos": ["Vente_brs_20251224.mp4", "Vente (2)_brs_20251224.mp4"]},
     {"word": "Viol", "videos": ["Viol_brs_20251224.mp4"]},
-    {"word": "Volcan", "videos": ["Volcan_brs_20251224.mp4", "Volcan (2)_brs_20251224.mp4"]}
+    {"word": "Volcan", "videos": ["Volcan_brs_20251224.mp4", "Volcan (2)_brs_20251224.mp4"]}       
   ]
 }

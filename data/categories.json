@@ -1,4 +1,8 @@
 [
+  {"file": "pi_sourd.json", "label": "Pi Sourd", "enabled": true},
+  {"file": "nature.json", "label": "Nature", "enabled": true},
+  {"file": "tourisme.json", "label": "Tourisme", "enabled": true},
+  {"file": "verbes.json", "label": "Verbes", "enabled": true},
   {"file": "pays_europe.json", "label": "Pays Europe", "enabled": true},
   {"file": "pays_monde.json", "label": "Pays du monde", "enabled": true},
   {"file": "villes.json", "label": "Villes Belgique", "enabled": true},
@@ -12,5 +16,6 @@
   {"file": "météo.json", "label": "Météo", "enabled": true},
   {"file": "émotions.json", "label": "Émotions, sentiments", "enabled": true},
   {"file": "couleurs.json", "label": "Couleurs", "enabled": true},
-  {"file": "métiers.json", "label": "Métiers", "enabled": true}
+  {"file": "métiers.json", "label": "Métiers", "enabled": true},
+  {"file": "autres.json", "label": "Autres", "enabled": true}
 ]

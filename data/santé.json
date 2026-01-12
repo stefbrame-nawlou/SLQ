@@ -37,7 +37,7 @@
     {"word": "Coronavirus", "videos": ["Coronavirus_brs_20251223.mp4"]},
     {"word": "Crème", "videos": ["Crème_brs_20251223.mp4"]},
     {"word": "Crise Cardiaque", "videos": ["Crise Cardiaque_brs_20251223.mp4"]},
-    {"word": "Dépression", "videos": ["Dépression_brs_20251223.mp4"]},
+    {"word": "dépression", "videos": ["dépression_brs_20260112.mp4", "dépression (2)_brs_20260112.mp4", "dépression (3)_brs_20260112.mp4"]},
     {"word": "Diabète", "videos": ["Diabète_brs_20251223.mp4"]},
     {"word": "Diarrhée", "videos": ["Diarrhée_brs_20251223.mp4"]},
     {"word": "Dyslexie", "videos": ["Dyslexie_brs_20251223.mp4"]},
@@ -85,7 +85,10 @@
     {"word": "Pou, Puce", "videos": ["Pou, Puce_brs_20251223.mp4"]},
     {"word": "Psychiatrie", "videos": ["Psychiatrie_brs_20251223.mp4"]},
     {"word": "Psychologie", "videos": ["Psychologie_brs_20251223.mp4"]},
+    {"word": "sport", "videos": ["sport_brs_20260112.mp4"]},
+    {"word": "Santé", "videos": ["santé_brs_20260112.mp4", "santé (2)_brs_20260112.mp4"]},
     {"word": "Trisomique", "videos": ["Trisomique_brs_20251223.mp4"]},
+    {"word": "vertige", "videos": ["vertige_brs_20260112.mp4"]},
     {"word": "Virus", "videos": ["Virus_brs_20251223.mp4"]}
   ]
 }

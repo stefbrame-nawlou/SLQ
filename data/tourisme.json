@@ -1,0 +1,33 @@
+{
+  "words": [
+    {"word": "Adresse", "videos": ["Adresse_brs_20260112.mp4", "Adresse (2)_brs_20260112.mp4"]},
+    {"word": "aéroport", "videos": ["aéroport_brs_20260112.mp4"]},
+    {"word": "agence", "videos": ["agence_brs_20260112.mp4"]},
+    {"word": "annuler", "videos": ["annuler_brs_20260112.mp4"]},
+    {"word": "Art", "videos": ["Art_brs_20260112.mp4", "Art (2)_brs_20260112.mp4"]},
+    {"word": "assurance", "videos": ["assurance_brs_20260112.mp4", "assurance (2)_brs_20260112.mp4"]},
+    {"word": "aventure", "videos": ["aventure_brs_20260112.mp4", "aventure (2)_brs_20260112.mp4"]},
+    {"word": "bagage", "videos": ["bagage_brs_20260112.mp4"]},
+    {"word": "billet", "videos": ["billet_brs_20260112.mp4"]},
+    {"word": "carte d’identité", "videos": ["carte d’identité_brs_20260112.mp4"]},
+    {"word": "dépenser", "videos": ["dépenser_brs_20260112.mp4"]},
+    {"word": "excursion", "videos": ["excursion_brs_20260112.mp4"]},
+    {"word": "guider, accompagner", "videos": ["guider, accompagner_brs_20260112.mp4"]},
+    {"word": "Hommage", "videos": ["Hommage_brs_20260112.mp4"]},
+    {"word": "hôtel", "videos": ["hôtel_brs_20260112.mp4", "hôtel (2)_brs_20260112.mp4", "hôtel (3)_brs_20260112.mp4"]},
+    {"word": "location", "videos": ["location_brs_20260112.mp4", "location (2)_brs_20260112.mp4", "location (3)_brs_20260112.mp4"]},
+    {"word": "Origine", "videos": ["Origine_brs_20260112.mp4", "Origine (2)_brs_20260112.mp4"]},
+    {"word": "passeport", "videos": ["passeport_brs_20260112.mp4"]},
+    {"word": "réduction", "videos": ["réduction_brs_20260112.mp4", "réduction (2)_brs_20260112.mp4"]},
+    {"word": "rembourser", "videos": ["rembourser_brs_20260112.mp4"]},
+    {"word": "réserver", "videos": ["réserver_brs_20260112.mp4"]},
+    {"word": "Réserver ", "videos": ["Réserver _brs_20260112.mp4"]},
+    {"word": "Sandwich ", "videos": ["Sandwich _brs_20260112.mp4", "Sandwich  (2)_brs_20260112.mp4"]},
+    {"word": "tarif", "videos": ["tarif_brs_20260112.mp4"]},
+    {"word": "tourisme", "videos": ["tourisme_brs_20260112.mp4", "tourisme (2)_brs_20260112.mp4"]},
+    {"word": "Village", "videos": ["Village_brs_20260112.mp4"]},
+    {"word": "visa (passport)", "videos": ["visa (passport)_brs_20260112.mp4"]},
+    {"word": "visite", "videos": ["visite_brs_20260112.mp4", "visite (2)_brs_20260112.mp4"]},
+    {"word": "voyage", "videos": ["voyage_brs_20260112.mp4", "voyage (2)_brs_20260112.mp4", "voyage (3)_brs_20260112.mp4"]}
+  ]
+}
