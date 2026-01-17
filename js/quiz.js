@@ -76,7 +76,7 @@ function showNext() {
     videoEl.muted = true; 
     videoEl.loop = true
     videoEl.playsInline = true; // mobile friendl
-    videoEl.style.width = "500px";
+    videoEl.style.width = "400px";
     videoEl.addEventListener("loadedmetadata", () => {
       videoEl.playbackRate = 1; // exact 100% speed
     });
