@@ -1,4 +1,5 @@
 [
+  {"file": "animaux_UE4.json", "label": "Animaux (UE4)", "enabled": true},
   {"file": "pi_sourd.json", "label": "Pi Sourd", "enabled": true},
   {"file": "nature.json", "label": "Nature", "enabled": true},
   {"file": "tourisme.json", "label": "Tourisme", "enabled": true},
